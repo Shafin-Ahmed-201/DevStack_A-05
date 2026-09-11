@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "badge": "Popular",
+    "rating": 4.9,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/React%20Logo%20SVG.svg"
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "badge": "Versatile",
+    "rating": 4.8,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vue.js%20Logo%202.svg"
+  },
+  {
+    "id": 3,
+    "name": "Svelte",
+    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "badge": "Fast",
+    "rating": 4.8,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Svelte%20Logo.svg"
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "description": "The React framework for production applications with hybrid static and server rendering.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "badge": "SSR / Edge",
+    "rating": 4.9,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nextjs-logo.svg"
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "category": "Backend",
+    "level": "Intermediate",
+    "badge": "Standard",
+    "rating": 4.8,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Node.js%20logo.svg"
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "category": "Database",
+    "level": "Intermediate",
+    "badge": "Top SQL",
+    "rating": 4.9,
+    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v16.29.0/icons/postgresql.svg"
+  },
+  {
+    "id": 7,
+    "name": "Redis",
+    "description": "An in-memory data structure store used as a high-speed database, cache, and message broker.",
+    "category": "Database",
+    "level": "Intermediate",
+    "badge": "Cache",
+    "rating": 4.8,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Redis%20logo.svg"
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "description": "The versatile programming language powering dynamic behavior across the web.",
+    "category": "Language",
+    "level": "Beginner-Friendly",
+    "badge": "Ubiquitous",
+    "rating": 4.9,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JavaScript%20logo.svg"
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "category": "Language",
+    "level": "Intermediate",
+    "badge": "Essential",
+    "rating": 4.9,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Typescript.svg"
+  },
+  {
+    "id": 10,
+    "name": "Java",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "category": "Language",
+    "level": "Intermediate",
+    "badge": "Robust",
+    "rating": 4.6,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/OpenJDK%20logo.svg"
+  },
+  {
+    "id": 11,
+    "name": "Tailwind CSS",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "category": "Styling",
+    "level": "Beginner-Friendly",
+    "badge": "Modern",
+    "rating": 4.9,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tailwind%20CSS%20Logo.svg"
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
+    "category": "DevOps",
+    "level": "Intermediate",
+    "badge": "Containers",
+    "rating": 4.9,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Docker%20Logo.svg"
+  }
+]
