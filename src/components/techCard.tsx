@@ -9,28 +9,22 @@ export interface TechCardProps {
 }
 
 const TechCard = ({ tech, addToStack, setAddToStack }: TechCardProps) => {
-  //  const [added,setAdded]=useState<boolean>(false)
   const added = addToStack.some((teche) => teche.id === tech.id);
   const handelAddToStack = (tech: ITechnologyType) => {
-    if (addToStack.includes(tech)) {
-      toast.error(`${tech.name} Already Added`);
-    } else {
-      const newStack = [...addToStack, tech];
-      setAddToStack(newStack);
+    const newStack = [...addToStack, tech];
+    setAddToStack(newStack);
 
-      toast.success(`${tech.name} Successfully Added`, {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-      });
-      // setAdded(true)
-    }
+    toast.success(`${tech.name} Successfully Added`, {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   };
   return (
     <>
@@ -53,7 +47,7 @@ const TechCard = ({ tech, addToStack, setAddToStack }: TechCardProps) => {
         <p className="mt-1 text-[9px] leading-4 text-gray-500">
           {tech.description}
         </p>
-        <div className="mt-3 flex item-center justify-between mt-12">
+        <div className="mt-12 flex item-center justify-between">
           <div className="flex gap-1">
             <p className="rounded bg-gray-100 px-2 py-1 text-[10px] text-gray-600">
               {tech.category}
@@ -66,13 +60,14 @@ const TechCard = ({ tech, addToStack, setAddToStack }: TechCardProps) => {
         </div>
         <button
           onClick={() => handelAddToStack(tech)}
+          disabled={added}
           className={
             added
               ? "mt-3 w-full rounded-md bg-red-100 py-2 text-[9px] font-medium text-red-500 disabled:cursor-not-allowed"
               : "mt-3 w-full rounded-md bg-gray-950 py-2 text-[9px] font-medium text-white hover:bg-gray-800 cursor-pointer"
           }
         >
-          {added ? "Added to Stack" : "Add to Stack"}
+          {added ? "✓ Added to Stack" : "Add to Stack"}
         </button>
       </div>
     </>

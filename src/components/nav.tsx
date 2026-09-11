@@ -1,12 +1,14 @@
 import Logo from '../assets/logo-text.png'
+import Hamburg from '../assets/hamburger.png'
 const Nav = () => {
     return (
         <>
         <nav className='bg-[#F1F5F9] sticky top-0 z-50'>  
         <div className='container mx-auto '>
             <div className='flex justify-between py-2 items-center'>
+                <img className='md:hidden' src={Hamburg} alt="Hamberger-img" />
                 <img src={Logo} alt="nav-logo" />
-                <ul className='flex gap-5'>
+                <ul className='hidden md:flex gap-5'>
                     <li className='hover:text-[#D91B7E]'><a href="#">Home</a></li>
                     <li className='hover:text-[#D91B7E]'><a href="#">Technologies</a></li>
                     <li className='hover:text-[#D91B7E]'><a href="#">Project</a></li>
