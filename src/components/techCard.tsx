@@ -31,8 +31,8 @@ const TechCard = ({ tech, addToStack, setAddToStack }: TechCardProps) => {
       <div
         className={
           added
-            ? "bg-[#F1F5F9] p-5 rounded-xl h-[277px] border border-red-300"
-            : "bg-[#F1F5F9] p-5 rounded-xl h-[277px]"
+            ? "bg-[#F1F5F9] p-5 rounded-xl h-69.25 border border-red-300"
+            : "bg-[#F1F5F9] p-5 rounded-xl h-69.25"
         }
       >
         <div className="flex items-start justify-between space-y-5">
