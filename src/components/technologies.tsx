@@ -10,6 +10,9 @@ export interface TechnologiesProps {
 const Technologies = ({ techpromise }: TechnologiesProps) => {
   const technologies = use(techpromise);
   const [addToStack, setAddToStack] = useState<ITechnologyType[]>([]);
+  const handelRemoveAll=()=>{
+      setAddToStack([])
+  }
 
   return (
     <>
@@ -29,7 +32,7 @@ const Technologies = ({ techpromise }: TechnologiesProps) => {
         <div className="col-span-9 grid grid-cols-3 gap-7">
           {technologies.map((tech) => (
             <TechCard
-              tech={tech}
+              key={tech.id} tech={tech}
               addToStack={addToStack}
               setAddToStack={setAddToStack}
             ></TechCard>
@@ -48,7 +51,7 @@ const Technologies = ({ techpromise }: TechnologiesProps) => {
           <div className="flex flex-col gap-3 justify-between rounded-lg border border-gray-200 px-3 py-2.5">
             {addToStack.length > 0 ? (
               addToStack.map((tech) => (
-                <AddStackCard tech={tech} addToStack={addToStack} setAddToStack={setAddToStack}></AddStackCard>
+                <AddStackCard key={tech.id} tech={tech} addToStack={addToStack} setAddToStack={setAddToStack}></AddStackCard>
               ))
             ) : (
               <p className="border-gray-200 py-2 px-5 text-gray-400 text-center">
@@ -58,7 +61,7 @@ const Technologies = ({ techpromise }: TechnologiesProps) => {
           </div>
           <div>
             {
-                addToStack.length>0?<button className="mt-12 w-full rounded-lg border border-red-300 py-1.5 text-sm font-semibold text-red-500 transition hover:bg-red-50">Remove All</button>:''
+                addToStack.length>0?<button onClick={handelRemoveAll} className="mt-12 w-full rounded-lg border border-red-300 py-1.5 text-sm font-semibold text-red-500 transition hover:bg-red-50">Remove All</button>:''
             }
           </div>
         </div>
