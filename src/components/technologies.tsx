@@ -13,7 +13,7 @@ const Technologies = ({ techpromise }: TechnologiesProps) => {
   const [addToStack, setAddToStack] = useState<ITechnologyType[]>([]);
   const handelRemoveAll = () => {
     setAddToStack([]);
-    toast.info("Stack Clear!", {
+    toast.info("Stack Clear.", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,

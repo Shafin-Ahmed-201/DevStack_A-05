@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { ITechnologyType } from "../type";
+import { Bounce, toast } from "react-toastify";
 
 export interface AddStackCardProps {
   tech: ITechnologyType;
@@ -15,6 +16,18 @@ const AddStackCard = ({
   const handelSingleRemove = (tech: ITechnologyType) => {
     const afterRemove = addToStack.filter((teche) => teche.id !== tech.id);
     setAddToStack(afterRemove);
+
+    toast.info(`${tech.name} remove from Stack.`, {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   };
 
   return (

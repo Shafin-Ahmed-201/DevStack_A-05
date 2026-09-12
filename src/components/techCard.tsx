@@ -14,7 +14,7 @@ const TechCard = ({ tech, addToStack, setAddToStack }: TechCardProps) => {
     const newStack = [...addToStack, tech];
     setAddToStack(newStack);
 
-    toast.success(`${tech.name} Successfully Added`, {
+    toast.success(`${tech.name} Successfully Added.`, {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,

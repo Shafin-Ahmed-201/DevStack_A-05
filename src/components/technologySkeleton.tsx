@@ -1,6 +1,6 @@
 const TechnologySkeleton = () => {
   return (
-    <div className=" container mx-auto h-[277px] rounded-xl bg-[#F1F5F9] p-5 animate-pulse">
+    <div className=" container mx-auto h-69.25 rounded-xl bg-[#F1F5F9] p-5 animate-pulse">
       <div className="h-10 w-10 rounded-lg bg-gray-300"></div>
 
       <div className="mt-8 h-4 w-24 rounded bg-gray-300"></div>

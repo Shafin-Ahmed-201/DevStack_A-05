@@ -61,7 +61,10 @@ const Footer = () => {
           <p className="text-gray-400">
             © 2026 Dev Stack. All rights reserved.
           </p>
-          <p className="text-gray-400">Privacy Terms</p>
+          <div className="text-gray-400 flex gap-3">
+          <a href="">Privacy</a>
+          <a href="">Terms</a>
+          </div>
         </div>
       </div>
     </footer>
