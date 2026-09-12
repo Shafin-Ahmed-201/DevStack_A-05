@@ -81,7 +81,7 @@ const Technologies = ({ techpromise }: TechnologiesProps) => {
             {addToStack.length > 0 ? (
               <button
                 onClick={handelRemoveAll}
-                className="mt-12 w-full rounded-lg border border-red-300 py-1.5 text-sm font-semibold text-red-500 transition hover:bg-red-50"
+                className="mt-12 w-full rounded-lg border border-red-300 py-1.5 text-sm font-semibold text-red-500 cursor-pointer hover:bg-red-50"
               >
                 Remove All
               </button>

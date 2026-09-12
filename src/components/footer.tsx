@@ -16,7 +16,7 @@ const Footer = () => {
               <a href="#">Linkedin</a>
             </div>
           </div>
-          <div>
+          <div className="hidden md:flex flex-col">
             <h3>PRODUCT</h3>
             <ul className="text-gray-400">
               <li>
@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="hidden md:flex flex-col">
             <h3>COMPANY</h3>
             <ul className="text-gray-400">
               <li>
@@ -44,7 +44,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="hidden md:flex flex-col">
             <h3>LEGAL</h3>
             <ul className="text-gray-400">
               <li>
