@@ -5,6 +5,7 @@ import Nav from './components/nav'
 import Technologies from './components/technologies'
 import Footer from './components/footer'
 import { ToastContainer } from 'react-toastify'
+import TechnologySkeleton from './components/technologySkeleton'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <ToastContainer/>
      <Nav></Nav>
      <Banner></Banner>
-    <Suspense fallback={<>Loading...</>}><Technologies techpromise={TechPromise()}></Technologies></Suspense>
+    <Suspense fallback={<TechnologySkeleton></TechnologySkeleton>}><Technologies techpromise={TechPromise()}></Technologies></Suspense>
     <Footer></Footer>
     </>
   )
